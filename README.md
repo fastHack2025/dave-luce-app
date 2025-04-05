@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Dave & Luce Solutions — Web App IA
 
-## Getting Started
+Une application moderne, performante, intelligente et responsive pour gérer les services de **Dave & Luce Solutions**.
 
-First, run the development server:
+✨ Intégration de GPT-4, services dynamiques, design UX/UI professionnel et base Next.js 15 avec App Router.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔧 Stack technique
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Next.js 15+ (App Router)**
+- **React 19 (use client/server)**
+- **TypeScript**
+- **Tailwind CSS**
+- **Framer Motion**
+- **OpenAI GPT-4 (API)**
+- **Vercel (déploiement prévu)**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🧠 Fonctionnalité IA
 
-To learn more about Next.js, take a look at the following resources:
+💬 **Assistant IA GPT-4 intégré**  
+- Comprend les besoins du client  
+- Propose la bonne solution (CRM, formation, etc.)  
+- Peut générer un devis ou lancer une commande automatiquement
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🧱 Structure du projet
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```txt
+src/
+├── app/                → Pages & API avec App Router
+│   └── api/chat/       → Endpoint GPT-4
+├── components/         → UI (Hero, Services, ChatBot)
+├── hooks/              → Hooks React (ex: useChatGPT)
+├── lib/                → Libs globales (ex: openai.ts)
+├── types/              → Interfaces (chat, messages, etc.)
+├── config/, utils/, features/ → Briques métiers

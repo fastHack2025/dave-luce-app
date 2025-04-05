@@ -1,16 +1,24 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 export default function Hero() {
   return (
-    <section className="relative w-full h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-white overflow-hidden">
+    <section className="relative w-full h-screen flex flex-col items-center justify-center bg-gradient-to-br from-blue-50 to-white overflow-hidden px-4 text-center">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="text-center px-4"
       >
+        <Image
+          src="https://res.cloudinary.com/dko5sommz/image/upload/v1743812649/logo_rblwxd.png"
+          alt="Logo Dave & Luce"
+          width={120}
+          height={120}
+          className="mx-auto mb-4"
+          priority
+        />
         <h1 className="text-4xl md:text-6xl font-extrabold text-gray-800 mb-4">
           Bienvenue chez <span className="text-blue-600">Dave & Luce</span>
         </h1>
@@ -24,13 +32,6 @@ export default function Hero() {
           🚀 Lancer un projet
         </a>
       </motion.div>
-
-      <motion.div
-        className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-blue-100 to-transparent"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1, duration: 1 }}
-      />
     </section>
   )
 }
