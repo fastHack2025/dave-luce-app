@@ -1,22 +1,28 @@
 import './globals.css'
 import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
 import { ClerkProvider } from '@clerk/nextjs'
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
+import { DefaultSeo } from 'next-seo'
+import { SEO } from '@/config/next-seo.config'
+
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Dave & Luce Solutions',
-  description: 'Agence digitale avec IA intégrée',
+  description: 'Solutions digitales IA, CRM, web, formations et plus.',
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
     <ClerkProvider>
       <html lang="fr">
-        <body>
-          <Navbar />
+        <body className={inter.className}>
+          <DefaultSeo {...SEO} />
           {children}
-          <Footer />
         </body>
       </html>
     </ClerkProvider>
