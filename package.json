@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@clerk/nextjs": "^6.13.0",
+    "@supabase/supabase-js": "^2.49.4",
     "framer-motion": "^12.6.3",
     "next": "15.2.4",
     "react": "^19.0.0",
